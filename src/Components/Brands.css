@@ -1,0 +1,13 @@
+.brand-img-cont{
+    width: 150px;
+}
+.brand-slider.swiper{
+    width: 80%;
+    height: 120px !important;
+    margin: 0 auto;
+}
+@media screen and (max-width:430px) {
+    .brand-img-cont{
+        width: 130px;
+    }
+}

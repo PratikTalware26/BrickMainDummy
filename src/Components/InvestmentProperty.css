@@ -1,0 +1,38 @@
+/* .investSwipermain{
+    width: 70%;
+} */
+.invest-cont {
+  background: #e4e7fe;
+}
+/* .invest-card {
+  width: 300px;
+} */
+.invest-slider-cont {
+    width: 70%;
+    margin: 0 auto;
+}
+.invest-addr {
+  float: right;
+  color: grey;
+  font-size: medium;
+  font-weight: 300;
+}
+.units {
+  color: grey;
+  font-size: small;
+  font-weight: 300;
+}
+.retail {
+  color: #ef6745;
+}
+.invest-btn {
+  padding: 5px 10px;
+  background: #f16745;
+  border: none;
+  border-radius: 4px;
+}
+/* .invest-slider-cont{
+    padding-left: 70px;
+    padding-right: 70px;
+} */
+  

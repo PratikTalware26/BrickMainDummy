@@ -1,0 +1,17 @@
+.nav-cont{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.mainLogo{
+    max-height: 55px;
+}
+.nav-link{
+ padding: 8px 30px !important;
+}
+.nav-link:hover{
+    background: var(--colorPrimary);
+    border-radius: 50px;
+    /* padding: 8px 30px !important; */
+    color: white;
+}

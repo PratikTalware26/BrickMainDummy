@@ -1,0 +1,91 @@
+.card {
+  position: relative;
+  width: 100%;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.res-cont-parent {
+  background: linear-gradient(
+    0deg,
+    rgb(255 255 255) 0%,
+    rgb(235 236 249) 58%,
+    rgb(228 230 253) 100%
+  );
+}
+.park-img {
+  width: 60px;
+}
+.res-cont {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+}
+.res-leftside {
+  width: 30%;
+  background: white;
+  padding: 10px;
+}
+.res-rightside {
+  width: 70%;
+}
+.res-view-btn {
+  font-size: 15px;
+  background-color: #ef6745;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 700;
+  border: none;
+}
+.pre-launch {
+  position: absolute;
+  top: 0;
+  width: auto;
+  font-size: 14px;
+  display: block;
+  float: right;
+  right: 0;
+  padding: 10px 5px;
+  color: #fff;
+  background-color: #ef6745;
+  margin-top: 10px;
+  border-top-left-radius: 10px;
+}
+.card-desc {
+  padding: 10px;
+}
+.res-knowmore-btn {
+  float: right;
+  font-size: 13px !important;
+  color: #ef6745;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  border: 1px solid #eae6e6;
+}
+.home-three-icons img {
+  height: 50px;
+}
+.browse-btn {
+  /* font-family: proxi-semibold; */
+  font-size: 1rem;
+  color: #fff;
+  background-color: #f16745;
+  border: 1px solid #f16745;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+.mySwiper{
+    padding: 10px !important;
+}
+.swiper-wrapper{
+    align-items: center;
+}
+
+@media screen and (max-width:670px) {
+    .res-cont{
+        flex-direction: column;
+    }
+    .res-leftside, .res-rightside{
+        width: auto !important;
+    }
+}
