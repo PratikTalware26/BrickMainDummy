@@ -1,0 +1,19 @@
+/* .nav-home-cont {
+    position: relative;
+    overflow: hidden;
+  } */
+
+  .animated-component {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease,
+      transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  
+  .animated-component.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Add additional styling as needed */
+  
