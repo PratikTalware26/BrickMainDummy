@@ -17,7 +17,7 @@ const AllComponents = () => {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.15, // Adjust the threshold as needed
+      threshold: 0.1, // Adjust the threshold as needed
     };
 
     const handleIntersection = (entries) => {

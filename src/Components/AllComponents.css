@@ -5,9 +5,10 @@
 
   .animated-component {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(120px);
     transition: opacity 0.8s ease,
-      transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      /* transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55); */
+      transform 0.5s linear;
   }
   
   .animated-component.visible {

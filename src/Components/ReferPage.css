@@ -1,0 +1,121 @@
+.refer-row-1 {
+  height: 80vh;
+  /* background: #F4A14F; */
+  background-image: url("../assets/row1Img.png");
+  background-size: 100% 100%;
+}
+.refer-head {
+  color: #ef6330;
+  text-shadow: 2px 2px 2px #a16633;
+}
+.refer-head-2 {
+  color: white;
+  text-shadow: 2px 2px 2px #a16633;
+}
+.refer-steps {
+  background: #cbcbcb;
+}
+.refer-steps-cards-cont {
+  gap: 30px;
+}
+.refer-steps-cards-desc {
+  color: #ee5931;
+}
+.refer-row-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background:#F4A14F url("../assets/patternBackground.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.refer-form-cont{
+    /* background-image: url("../assets/referFormBackImg.png"); */
+    background-image: url("../assets/Untitled design (4).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+.refer-form-input-bottom {
+  border-bottom: 1px solid white;
+}
+.refer-form-input-bottom input {
+  border-radius: 50px;
+  border: none;
+  padding: 5px;
+}
+.refer-form-input-bottom,
+.refer-brick-addr {
+  color: white;
+}
+.refer-sub-btn {
+  padding: 10px 50px;
+  border: 2px solid white;
+  background: transparent;
+  border-radius: 50px;
+  color: white;
+  font-size: larger;
+  font-weight: 700;
+  margin-top: 10px;
+  /* width: 60%; */
+}
+.refer-form-input-cont {
+  width: 60%;
+}
+.refer-brick-logo {
+  width: 100px;
+  margin: 40px 0;
+}
+.refer-row3-form-cont {
+  width: 80%;
+  /* justify-content: center; */
+  margin: 0 auto;
+  gap: 20px;
+}
+.refer-form-leftside {
+  width: 30%;
+}
+.refer-form-rightside {
+  width: 60%;
+}
+.form-label{
+    text-shadow: 2px 2px 2px black;
+}
+@media screen and (max-width: 500px) {
+  .refer-row-1 {
+    background-image: url("../assets/row1MobImg.png");
+  }
+}
+@media screen and (max-width: 600px) {
+  .refer-steps-cards-cont {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 900px) {
+  .refer-row-1 {
+    padding-top: 6rem !important;
+    padding: 10px;
+  }
+  .refer-row-3 {
+    padding: 10px !important;
+  }
+  .refer-row3-form-cont {
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .refer-form-leftside {
+    width: 100% !important;
+    text-align: center;
+  }
+  .refer-form-rightside {
+    width: 100% !important;
+  }
+  .refer-form-input-bottom {
+    flex-direction: column;
+  }
+  .refer-form-input-cont {
+    width: 100% !important;
+  }
+}
