@@ -6,6 +6,9 @@
   background-color: #f16745;
   color: #fff;
 }
+.f-row1-btn:hover{
+    background-color: #f16745;
+}
 .aos-animate {
   font-size: 45px;
   color: white;

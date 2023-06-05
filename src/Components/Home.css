@@ -10,11 +10,11 @@
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.home-cont-trans{
+.home-cont-trans {
   /* opacity: 1;
   transform: translateY(0); */
-    opacity: 1;
-    transform: translateY(0) scale(1);
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 .home-btn-opts-cont {
@@ -26,47 +26,86 @@
 .home-btn-opts {
   gap: 1vw;
 }
-.home-btns{
-    background: #EE542F;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 4px;
-    border: none;
+.home-btns {
+  background: #ee542f;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+  border: none;
 }
-.home-search-btn{
-    border: none;
-    padding: 5px 20px;
-    background: var(--colorPrimary);
-    /* border-radius: 4px; */
-    color: white;
+.home-search-btn {
+  border: none;
+  padding: 5px 20px;
+  background: var(--colorPrimary);
+  /* border-radius: 4px; */
+  color: white;
 }
-.home-btns:hover{
-    cursor: pointer;
-    color: black;
+.home-btns:hover {
+  cursor: pointer;
+  color: black;
 }
-.home-search-btn:hover{
-    cursor: pointer;
-    color: black;
+.home-search-btn:hover {
+  cursor: pointer;
+  color: black;
 }
 .home-search-opt-cont {
   gap: 1vw;
 }
-.main-head{
-    color: white;
-    text-shadow: 2px 2px 2px black;
+.main-head {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px black;
 }
-.select-opt-cont{
+.select-opt-cont {
+  display: flex;
+  background: white;
+  padding: 10px;
+  align-items: center;
+  border-radius: 20px;
+  width: 400px;
+  gap: 4px;
+}
+.home-select {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  color: gray;
+}
+
+@media screen and (max-width: 630px) {
+  .home-btn-opts-wrapper {
+    width: 90vw;
+    overflow-x: auto;
+  }
+
+  .home-btn-opts {
+    /* width: 600px; */
     display: flex;
-    background: white;
-    padding: 10px;
-    align-items: center;
-    border-radius: 20px;
-    width: 400px;
-    gap: 4px;
-}
-.home-select{
-    width: 100%;
-    padding: 6px;
-    border:1px solid #ccc;
-    color: gray;
+    gap: 1vw;
+    padding-bottom: 10px;
+    justify-content: space-between !important;
+  }
+  .home-btn-opts-cont {
+    gap: 1vh !important;
+  }
+  .home-btns {
+    /* width: 150px; */
+    white-space: nowrap;
+    padding: 15px 20px;
+    border-radius: 4px;
+    border: none;
+    background: #ee542f;
+    color: white;
+  }
+  .select-opt-cont {
+    width: auto !important;
+  }
+  .home-search-opt-cont {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw;
+  }
+  .home-buyer-img {
+    height: 100px;
+  }
 }

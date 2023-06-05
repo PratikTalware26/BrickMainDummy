@@ -13,10 +13,10 @@ const CuratedCollection = () => {
         <h2 className="text-center p-4">Curated Collection</h2>
       </div>
       <div className="d-flex curated-img-cont">
-        <div className="pre-launch-img-cont">
+        <div className="pre-launch-img-cont p-2">
           <img src={preLaunch} alt="" className="w-100 h-100 border-radius-4" />
         </div>
-        <div className="d-flex flex-column gap-20 justify-content-center">
+        <div className="d-flex flex-column gap-20 justify-content-center p-2">
           <div className="d-flex gap-20">
             <div className="sub-img-cont">
               <img src={readyToMove} alt="" className="w-100 h-100 border-radius-4" />

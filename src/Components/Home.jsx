@@ -37,6 +37,7 @@ const Home = () => {
           </h1>
         </div>
         <div className="d-flex flex-column home-btn-opts-cont">
+        <div className="home-btn-opts-wrapper">
           <div className="d-flex justify-content-center home-btn-opts">
             <div>
               <button className="home-btns">Investment</button>
@@ -50,6 +51,7 @@ const Home = () => {
             <div>
               <button className="home-btns">Managed Offices</button>
             </div>
+          </div>
           </div>
           <div className="d-flex home-search-opt-cont">
             <div className="select-opt-cont">
