@@ -31,7 +31,7 @@
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   gap: 20px;
-}
+} 
 .schedual-call-btn {
   background-color: #fff;
   border: 1px solid #fff;
@@ -71,7 +71,8 @@
 }
 @media screen and (max-width:620px) {
     .f-social-cont{
-        flex-direction: column;
-        gap: 10px !important;
+        flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px !important;
     }
 }

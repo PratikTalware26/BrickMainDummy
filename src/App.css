@@ -6,3 +6,7 @@
     background-size: 100% 100vh;
     background-repeat: no-repeat;
 }
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+  }

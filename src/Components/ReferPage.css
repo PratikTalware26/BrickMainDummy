@@ -1,7 +1,7 @@
 .refer-row-1 {
   height: 80vh;
   /* background: #F4A14F; */
-  background-image: url("../assets/row1Img.png");
+  background-image: url("../assets/row1Img2.png");
   background-size: 100% 100%;
 }
 .refer-head {
@@ -13,13 +13,32 @@
   text-shadow: 2px 2px 2px #a16633;
 }
 .refer-steps {
-  background: #cbcbcb;
+    min-height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  background: #cbcbcb url("../assets//row2Pattern.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .refer-steps-cards-cont {
+    flex-wrap: wrap;
+    justify-content: center;
   gap: 30px;
+}
+.refer-steps-cards-cont .card{
+    width: 350px;
+    min-height: 300px;
+    padding: 10px;
 }
 .refer-steps-cards-desc {
   color: #ee5931;
+}
+.cardStepImg{
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
 }
 .refer-row-3 {
   display: flex;
@@ -30,6 +49,9 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+.text-shadow {
+    text-shadow: 2px 2px 4px black;
+  } 
 .refer-form-cont{
     /* background-image: url("../assets/referFormBackImg.png"); */
     background-image: url("../assets/Untitled design (4).png");
@@ -85,18 +107,19 @@
 @media screen and (max-width: 500px) {
   .refer-row-1 {
     background-image: url("../assets/row1MobImg.png");
-  }
-}
-@media screen and (max-width: 600px) {
-  .refer-steps-cards-cont {
-    flex-direction: column;
+    padding: 10px !important;
   }
 }
 @media screen and (max-width: 900px) {
-  .refer-row-1 {
-    padding-top: 6rem !important;
-    padding: 10px;
+  .refer-steps-cards-cont {
+    flex-wrap: wrap;
+    align-items: center;
   }
+  /* .refer-form-cont{
+    background-size: 100% 100%;
+  } */
+}
+@media screen and (max-width: 900px) {
   .refer-row-3 {
     padding: 10px !important;
   }

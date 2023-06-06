@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import mainLogo from "../assets/brickFMainLogo.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
+  const [currentPage, setCurrentPage] = useState("Home"); // Add state for current page
+
+  const location = useLocation(); // React Router's useLocation hook
+
   const handleClick = () => {
     setShowNav(!showNav);
   };
@@ -25,8 +29,9 @@ const Navbar = () => {
     }
   }, [windowWidth]);
 
-  const handleNav = () => {
+  const handleNav = (page) => {
     setShowNav(false);
+    setCurrentPage(page); // Set the current page when navigation link is clicked
   };
 
   return (
@@ -54,16 +59,27 @@ const Navbar = () => {
             id="navbarNavAltMarkup"
           >
             <div className="navbar-nav" onClick={handleNav}>
-              <a className="nav-link" aria-current="page" href="#">
+              <Link
+                to="/"
+                className={`nav-link ${
+                  location.pathname === "/" ? "active" : ""
+                }`}
+              >
                 Home
-              </a>
-              <a className="nav-link" href="#">
+              </Link>
+              <Link
+                className={`nav-link ${
+                  location.pathname === "/investments" ? "active" : ""
+                }`}
+              >
                 Investments
-              </a>
-              {/* <a className="nav-link" href="#">
-                Refer and Earn!
-              </a> */}
-              <Link to="referandearn" className="nav-link">
+              </Link>
+              <Link
+                to="referandearn"
+                className={`nav-link ${
+                  location.pathname === "/referandearn" ? "active" : ""
+                }`}
+              >
                 Refer and Earn!
               </Link>
             </div>

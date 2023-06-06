@@ -1,6 +1,7 @@
 {
   "name": "brickfoliomain",
   "private": true,
+  "proxy":"http://localhost/referal-api/referApi.php",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

@@ -39,26 +39,36 @@ const Footer = () => {
         </div>
 
         <div className="d-flex f-social-cont">
+            <a href="https://in.linkedin.com/company/brickfolioprivatelimited" target="_blank">
         <div className="border border-1 border-solid p-1 px-3">
           <i className="bx bxl-linkedin aos-animate"></i>
           <span className="d-block">LinkedIn</span>
         </div>
+        </a>
+        <a href="https://www.facebook.com/BrickFolio/" target="_blank">
         <div className="border border-1 border-solid p-1 px-3">
           <i className="bx bxl-facebook aos-init aos-animate"></i>
           <span className="d-block">Facebook</span>
         </div>
+        </a>
+        <a href="https://www.youtube.com/channel/UCl9tTRMT9AGL4mXJf0K6_cw" target="_blank">
         <div className="border border-1 border-solid p-1 px-3">
           <i className="bx bxl-youtube aos-init aos-animate"></i>
           <span className="d-block">Youtube</span>
         </div>
+        </a>
+        <a href="https://twitter.com/BrickFoliodotin" target="_blank">
         <div className="border border-1 border-solid p-1 px-3">
           <i className="bx bxl-twitter aos-init aos-animate"></i>
           <span className="d-block">Twitter</span>
         </div>
+        </a>
+        <a href="https://www.instagram.com/brickfolio/" target="_blank">
         <div className="border border-1 border-solid p-1 px-3">
           <i className="bx bxl-instagram-alt aos-init aos-animate"></i>
           <span className="d-block">Instagram</span>
         </div>
+        </a>
         </div>
       </div>
 
@@ -83,15 +93,21 @@ const Footer = () => {
           © 2021 Copyright Brickfolio Pvt. Ltd.. All Rights Reserved.
         </div>
         <div>
+            <a href="https://twitter.com/BrickFoliodotin" target="_blank">
           <span className="f-social-bottom">
             <i className="bx bxl-twitter"></i>
           </span>
+          </a>
+          <a href="https://www.facebook.com/BrickFolio/" target="_blank">
           <span className="mx-2 f-social-bottom">
             <i className="bx bxl-facebook"></i>
           </span>
+          </a>
+          <a href="https://in.linkedin.com/company/brickfolioprivatelimited" target="_blank">
           <span>
             <i className="bx bxl-linkedin f-social-bottom"></i>
           </span>
+          </a>
         </div>
       </div>
     </div>
