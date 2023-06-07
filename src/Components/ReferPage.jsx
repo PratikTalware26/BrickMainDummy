@@ -21,7 +21,7 @@ const ReferPage = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(data);
+    // console.log(data);
     try {
       const fetchData = async () => {
         await fetch("http://localhost/referal-api/referApi.php", {
@@ -30,13 +30,30 @@ const ReferPage = () => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(data),
-        });
+        })
+          .then((res) => {
+            if (res.ok) {
+              alert("Thank you! Details Received! Our Sales team will soon get in touch!");
+              setData({
+                referer_name: "",
+                referer_phone: "",
+                referee_name: "",
+                referee_phone: "",
+              });
+            } else {
+              throw new Error("Failed to submit form");
+            }
+          })
+          .catch((error) => {
+            console.log(error.message);
+          });
       };
       fetchData();
     } catch (error) {
       console.log(error.message);
     }
   };
+  
 
   return (
     <div>
@@ -71,7 +88,7 @@ const ReferPage = () => {
             3 - Steps To Follow
           </h1>
         </div>
-        <div className="d-flex p-5 refer-steps-cards-cont">
+        <div className="d-flex refer-steps-cards-cont">
           <div className="card text-center">
             <h3 className="refer-steps-cards-desc">#01</h3>
             <div>
@@ -155,6 +172,7 @@ const ReferPage = () => {
                       type="text"
                       className="w-100"
                       name="referer_name"
+                      value={data.referer_name}
                       pattern="[A-Za-z\s]+"
                       title="Please enter a valid name (only letters and spaces allowed)."
                       required
@@ -173,6 +191,7 @@ const ReferPage = () => {
                       type="text"
                       className="w-100"
                       name="referee_name"
+                      value={data.referee_name}
                       pattern="[A-Za-z\s]+"
                       title="Please enter a valid name (only letters and spaces allowed)."
                       required
@@ -191,6 +210,7 @@ const ReferPage = () => {
                       type="text"
                       className="w-100"
                       name="referer_phone"
+                      value={data.referer_phone}
                       maxLength="12"
                       minLength="10"
                       pattern="[0-9]+"
@@ -211,6 +231,7 @@ const ReferPage = () => {
                       type="text"
                       className="w-100"
                       name="referee_phone"
+                      value={data.referee_phone}
                       maxLength="12"
                       minLength="10"
                       pattern="[0-9]+"

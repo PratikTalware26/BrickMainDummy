@@ -31,16 +31,16 @@ const Navbar = () => {
 
   const handleNav = (page) => {
     setShowNav(false);
-    setCurrentPage(page); // Set the current page when navigation link is clicked
+    // setCurrentPage(page); // Set the current page when navigation link is clicked
   };
 
   return (
     <div className="nav-cont">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/">
             <img src={mainLogo} alt="" className="mainLogo" />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -74,13 +74,8 @@ const Navbar = () => {
               >
                 Investments
               </Link>
-              <Link
-                to="referandearn"
-                className={`nav-link ${
-                  location.pathname === "/referandearn" ? "active" : ""
-                }`}
-              >
-                Refer and Earn!
+              <Link to="/referandearn" className={`nav-link ${location.pathname==="/referandearn" ? "active":""}`}>
+              Refer and Earn!
               </Link>
             </div>
           </div>

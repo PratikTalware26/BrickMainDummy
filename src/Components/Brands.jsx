@@ -16,7 +16,6 @@ import client6 from "../assets/client6.png"
 import client7 from "../assets/client7.png"
 import client8 from "../assets/client8.png"
 import client9 from "../assets/client9.png"
-import client10 from "../assets/client10.png"
 import client11 from "../assets/client11.png"
 import client12 from "../assets/client12.png"
 import client13 from "../assets/client13.png"
@@ -114,11 +113,6 @@ const Brands = () => {
         <SwiperSlide>
             <div className="brand-img-cont">
                 <img src={client9} alt="" className="w-100"/>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className="brand-img-cont">
-                <img src={client10} alt="" className="w-100"/>
             </div>
         </SwiperSlide>
         <SwiperSlide>

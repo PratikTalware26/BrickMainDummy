@@ -1,5 +1,5 @@
 .refer-row-1 {
-  height: 80vh;
+  height: 85vh;
   /* background: #F4A14F; */
   background-image: url("../assets/row1Img2.png");
   background-size: 100% 100%;
@@ -25,7 +25,8 @@
 .refer-steps-cards-cont {
     flex-wrap: wrap;
     justify-content: center;
-  gap: 30px;
+    gap: 30px;
+    padding: 30px;
 }
 .refer-steps-cards-cont .card{
     width: 350px;
@@ -44,6 +45,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 600px;
   padding: 50px;
   background:#F4A14F url("../assets/patternBackground.png");
   background-size: 100% 100%;
@@ -110,16 +112,17 @@
     padding: 10px !important;
   }
 }
+@media screen and (max-width: 700px) {
+    .refer-form-cont{
+        background-image: url("../assets/referFormMobBackImg.png");
+    }
+}
 @media screen and (max-width: 900px) {
   .refer-steps-cards-cont {
     flex-wrap: wrap;
     align-items: center;
+    padding: 10px !important;
   }
-  /* .refer-form-cont{
-    background-size: 100% 100%;
-  } */
-}
-@media screen and (max-width: 900px) {
   .refer-row-3 {
     padding: 10px !important;
   }

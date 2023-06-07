@@ -81,10 +81,12 @@ const Footer = () => {
           <p>Schedule a call with our investment advisor today</p>
         </div>
         <div>
+            <a href="tel:+919730001119">
           <button className="btn schedual-call-btn">
             <i className="bx bxs-phone-call m-1"></i>
             Schedule Call
           </button>
+          </a>
         </div>
       </div>
 
