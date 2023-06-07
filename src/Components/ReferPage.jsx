@@ -24,7 +24,7 @@ const ReferPage = () => {
     // console.log(data);
     try {
       const fetchData = async () => {
-        await fetch("http://localhost/referal-api/referApi.php", {
+        await fetch("https://brickfolio.co.in/referApi.php", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -67,13 +67,13 @@ const ReferPage = () => {
         </div>
         <div>
           <h1 className="py-3 display-4 refer-head-2">
-            Talking about us can<br></br>
+            Talking about us can
             be really rewarding
           </h1>
         </div>
         <div>
-          <h4 className="pt-5 refer-head-2">
-            Refer a friend and get a chance to reduce the cost of your home.
+          <h4 className="refer-head-3 refer-head-2">
+            Refer a friend and get a chance to reduce the cost of your home.<br></br>
             Bring your friends & family closer to you by referring them & enjoy
             1% referral benefits credited to your account
           </h4>

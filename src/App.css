@@ -1,12 +1,23 @@
-:root{
-    --colorPrimary:#EE542F;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
 }
-.nav-home-cont{
-    background-image: url("./assets/jason-dent-w3eFhqXjkZE-unsplash.jpg");
-    background-size: 100% 100vh;
-    background-repeat: no-repeat;
+
+:root {
+  --colorPrimary: #ee542f;
+}
+.nav-home-cont {
+  background-image: url("./assets/new nnrr.jpg");
+  background-size: 100% 100vh;
+  background-repeat: no-repeat;
 }
 a {
-    text-decoration: none !important;
-    color: inherit !important;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+@media screen and (max-width: 1020px) {
+  .nav-home-cont {
+    background-size: auto 100vh;
   }
+}

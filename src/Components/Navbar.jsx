@@ -5,7 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
-  const [currentPage, setCurrentPage] = useState("Home"); // Add state for current page
+  const [navAnim, setNavanim]=useState("")
 
   const location = useLocation(); // React Router's useLocation hook
 
@@ -31,9 +31,8 @@ const Navbar = () => {
 
   const handleNav = (page) => {
     setShowNav(false);
-    // setCurrentPage(page); // Set the current page when navigation link is clicked
   };
-
+  
   return (
     <div className="nav-cont">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -55,7 +54,7 @@ const Navbar = () => {
           <div
             className={`collapse navbar-collapse flex-row-reverse ${
               showNav ? "show" : ""
-            }`}
+            } ${navAnim}`}
             id="navbarNavAltMarkup"
           >
             <div className="navbar-nav" onClick={handleNav}>

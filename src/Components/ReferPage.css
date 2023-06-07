@@ -12,6 +12,10 @@
   color: white;
   text-shadow: 2px 2px 2px #a16633;
 }
+.refer-head-3{
+    padding-right: 20%;
+  padding-top: 20%;
+}
 .refer-steps {
     min-height: 600px;
     width: 100%;
@@ -68,6 +72,7 @@
   border-radius: 50px;
   border: none;
   padding: 5px;
+  padding-left: 15px;
 }
 .refer-form-input-bottom,
 .refer-brick-addr {
@@ -104,6 +109,7 @@
   width: 60%;
 }
 .form-label{
+    font-size: 25px;
     text-shadow: 2px 2px 2px black;
 }
 @media screen and (max-width: 500px) {
