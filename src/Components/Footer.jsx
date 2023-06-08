@@ -2,11 +2,13 @@ import React from "react";
 import "./Footer.css";
 import mainLogo from "../assets/brickFMainLogo.png";
 import "boxicons/css/boxicons.min.css";
+import { useLocation } from "react-router-dom";
 
 const Footer = () => {
+    const location= useLocation()
   return (
     <div className="footer-cont">
-      <div className="d-flex justify-content-between p-5 f-row1-cont">
+      <div className={`d-flex justify-content-between p-5 f-row1-cont ${location.pathname==="/referandearn"? "d-none":""}`}>
         <div>
           <h3 className="fw-light">
             89% of customers<br></br>

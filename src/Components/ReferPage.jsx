@@ -134,29 +134,6 @@ const ReferPage = () => {
               <div>
                 <img src={brickMain} alt="" className="refer-brick-logo" />
               </div>
-              <div>
-                <span>
-                  <a
-                    href="https://www.instagram.com/brickfolio/"
-                    target="_blank"
-                  >
-                    <i className="bx bxl-instagram-alt aos-init aos-animate text-shadow"></i>
-                  </a>
-                </span>
-                <span>
-                  <a
-                    href="https://www.facebook.com/BrickFolio/"
-                    target="_blank"
-                  >
-                    <i className="bx bxl-facebook aos-init aos-animate text-shadow"></i>
-                  </a>
-                </span>
-                <span>
-                  <a href="https://twitter.com/BrickFoliodotin" target="_blank">
-                    <i className="bx bxl-twitter aos-init aos-animate text-shadow"></i>
-                  </a>
-                </span>
-              </div>
             </div>
 
             <div className="refer-form-rightside">
