@@ -59,7 +59,7 @@ const ReferPage = () => {
     <div>
       <Navbar />
       <div className="p-5 refer-row-1 d-flex align-items-center">
-        <div>
+        <div className="refer-content">
         <div>
           <h1 className="display-2 refer-head">
             Brickfolio's Referral Program

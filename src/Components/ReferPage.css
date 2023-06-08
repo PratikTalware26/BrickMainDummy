@@ -121,9 +121,10 @@
 }
 @media screen and (max-width: 500px) {
   .refer-row-1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../assets/row1MobImg.png");
-    padding: 10px !important;
+    background-image: url("../assets/row1MobImg.jpg");
+  }
+  .refer-content{
+    display: none;
   }
 }
 @media screen and (max-width: 700px) {
