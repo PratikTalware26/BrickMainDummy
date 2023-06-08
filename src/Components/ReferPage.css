@@ -1,7 +1,7 @@
 .refer-row-1 {
-  height: 85vh;
+  height: 87vh;
   /* background: #F4A14F; */
-  background-image: url("../assets/row1Img2.png");
+  background-image: url("../assets/row1Img.png");
   background-size: 100% 100%;
 }
 .refer-head {
@@ -11,11 +11,6 @@
 .refer-head-2 {
   color: white;
   text-shadow: 2px 2px 2px #a16633;
-}
-.refer-head-3 {
-  font-size: 26px;
-  padding-right: 20%;
-  padding-top: 15%;
 }
 .refer-steps {
   min-height: 600px;
@@ -90,12 +85,12 @@
   margin-top: 10px;
   /* width: 60%; */
 }
-.refer-sub-btn:hover{
-    background: #F2A468;
+.refer-sub-btn:hover {
+  background: #f2a468;
 }
 .refer-sub-btn:active {
-    transform: scale(0.95);
-  }
+  transform: scale(0.95);
+}
 .refer-form-input-cont {
   width: 60%;
 }
@@ -119,14 +114,25 @@
   font-size: 25px;
   text-shadow: 2px 2px 2px black;
 }
+
+@media screen and (max-width:721px) {
+    .refer-row-1{
+        background-image: url("../assets/referralTabV.jpg");
+    }
+}
+
 @media screen and (max-width: 500px) {
   .refer-row-1 {
     background-image: url("../assets/row1MobImg.jpg");
   }
-  .refer-content{
+  .refer-content {
     display: none;
   }
+  .refer-head {
+    padding-top: 20px;
+  }
 }
+
 @media screen and (max-width: 700px) {
   .refer-form-cont {
     background-image: url("../assets/referFormMobBackImg.png");

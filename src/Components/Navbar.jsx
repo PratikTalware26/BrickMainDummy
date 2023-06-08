@@ -32,7 +32,7 @@ const Navbar = () => {
   const handleNav = (page) => {
     setShowNav(false);
   };
-  
+
   return (
     <div className="nav-cont">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -54,7 +54,7 @@ const Navbar = () => {
           <div
             className={`collapse navbar-collapse flex-row-reverse ${
               showNav ? "show" : ""
-            } ${navAnim}`}
+            }`}
             id="navbarNavAltMarkup"
           >
             <div className="navbar-nav" onClick={handleNav}>

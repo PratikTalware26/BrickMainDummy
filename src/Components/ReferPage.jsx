@@ -58,8 +58,8 @@ const ReferPage = () => {
   return (
     <div>
       <Navbar />
-      <div className="p-5 refer-row-1 d-flex align-items-center">
-        <div className="refer-content">
+      <div className="refer-row-1">
+        {/* <div className="refer-content">
         <div>
           <h1 className="display-2 refer-head">
             Brickfolio's Referral Program
@@ -78,7 +78,7 @@ const ReferPage = () => {
             1% referral benefits credited to your account
           </h4>
         </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="refer-steps">
